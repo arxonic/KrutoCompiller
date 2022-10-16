@@ -1,0 +1,24 @@
+!# Нахождение факториала #!
+var i, num: int;
+
+func int fact(k: int)
+{
+	if (k == 0) then {
+		k = 1;
+		return k;
+    };
+    if (k != 0) then {
+	  	k = k * fact(k-1);
+      	return k;
+    };
+};
+
+{
+        while (i < 10) do {
+    	    if i == 5 then
+    	        break;
+    	    num = fact(i);
+    	    print(num);
+    	    i = i + 1;
+    	};
+}.
